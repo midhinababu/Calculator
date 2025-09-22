@@ -5,7 +5,18 @@ function clearDiaplay() {
 }
 
 function appendValue(value) {
-  display.value += value;
+  if(value=='a'|| value=='b'){
+
+    if(value=='a'){
+      display.value += '(';
+    }else{
+      display.value += ')';
+    }
+  }
+  else{
+    display.value += value;
+  }
+ 
 }
 
 function calculateResult() {
